@@ -15,4 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\Controller::class, 'index']);
 
+Route::get('/xyz', [App\Http\Controllers\Controller::class, 'xyz']);
+
 Route::post('/abcd', [App\Http\Controllers\Controller::class, 'abcd']);
