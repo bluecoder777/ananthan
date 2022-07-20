@@ -12,10 +12,7 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     function index() 
     {
-        $a="";
-        exec('python C:\Users\abino_c2admvs\Desktop\ServerJefrin\mlscript.py',$a);
-        dd($a);
-        return view('welcome');
+        dd("hello");
     }
     function abcd(Request $request) 
     {
