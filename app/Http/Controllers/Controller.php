@@ -28,6 +28,5 @@ class Controller extends BaseController
         exec('python C:\Users\abino_c2admvs\Desktop\ServerJefrin\mlscript.py',$a);
         dd($a);
     }
-    
-    
+        
 }
