@@ -22,6 +22,12 @@ class Controller extends BaseController
         $c=json_encode($a);
         return $b;
     }
+
+    function xyz() 
+    {
+        exec('python C:\Users\abino_c2admvs\Desktop\ServerJefrin\mlscript.py',$a);
+        dd($a);
+    }
     
     
 }
