@@ -30,6 +30,5 @@ class Controller extends BaseController
         $c=json_encode($a);
         return($c);
     }
-    
-    
+        
 }
