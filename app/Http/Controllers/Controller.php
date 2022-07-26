@@ -14,19 +14,21 @@ class Controller extends BaseController
     {
         dd("hello");
     }
-    function abcd(Request $request) 
-    {
+    function poster(Request $request) 
+    {   
+        return "hello";
         $b=$request->qwerty;
-        move_uploaded_file($b, "C:\Users\abino_c2admvs\Desktop\ServerJefrin\qw.jpg");
-        exec('python C:\Users\abino_c2admvs\Desktop\ServerJefrin\mlscript.py',$a);
+        move_uploaded_file($b, 'C:\Users\fed\Documents\MiniProject\MiniServer\Pimtest.jpg');
+        exec('C:\Users\fed\anaconda3\envs\tf\python.exe C:\Users\fed\Documents\MiniProject\MiniServer\mlscript.py 2>&1',$a);
         $c=json_encode($a);
-        return $b;
+        return $c;
     }
 
-    function xyz() 
-    {
-        exec('python C:\Users\abino_c2admvs\Desktop\ServerJefrin\mlscript.py',$a);
-        dd($a);
+    function geter() 
+    {  
+        exec('C:\Users\fed\anaconda3\envs\tf\python.exe C:\Users\fed\Documents\MiniProject\MiniServer\mlscriptnoapi.py 2>&1',$a);
+        $c=json_encode($a);
+        return($c);
     }
     
     
